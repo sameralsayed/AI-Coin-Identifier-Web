@@ -1,0 +1,69 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+
+:root {
+    --gold: #ffc107;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar-brand span {
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: -1px;
+}
+
+.bg-gradient {
+    background: linear-gradient(135deg, #1a1a1a, #2c1f00);
+}
+
+.card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 30px -10px rgb(255 193 7 / 0.3) !important;
+}
+
+#drop-zone {
+    transition: all 0.3s ease;
+    background: rgba(255, 193, 7, 0.05);
+}
+
+#drop-zone.dragover {
+    background: rgba(255, 193, 7, 0.2);
+    border-color: #ffc107 !important;
+}
+
+.coin-card {
+    transition: transform 0.3s ease;
+}
+
+.coin-card:hover {
+    transform: scale(1.05);
+}
+
+.modal-content {
+    border-radius: 20px;
+    border: 3px solid #ffc107;
+}
+
+/* Gold accents */
+.text-gold {
+    color: #ffc107;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .display-3 {
+        font-size: 2.4rem;
+    }
+}
